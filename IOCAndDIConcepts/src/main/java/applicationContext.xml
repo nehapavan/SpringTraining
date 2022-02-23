@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.springframework.org/schema/beans">
+
+
+	<!-- <bean id="App1" class="com.example.demo.Facebook"></bean> -->
+	<!-- <bean id="App1" class="com.example.demo.Instagram"></bean> -->
+	<!-- <bean name="Products" class="com.evoke.demo.scopes.ScopesConcept" scope="singleton"></bean> -->
+	<bean id="product"
+		class="com.evoke.demo.setterandconstructor.BrandedProducts">
+		<!-- <property name="product" value="smartwatch"></property> -->
+		<constructor-arg value="Apple Watch"></constructor-arg>
+		<constructor-arg value="7999">
+
+		</constructor-arg>
+	</bean>
+
+</beans>
